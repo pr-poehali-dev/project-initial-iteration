@@ -11,7 +11,12 @@ export default function Index() {
           <a href="#">Доставка</a>
           <a href="#">Контакты</a>
         </nav>
-        <button className="btn-cta">Заказать</button>
+        <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+          <a href="tel:+79198760323" style={{ fontWeight: 800, fontSize: "14px", color: "var(--dark)", textDecoration: "none", display: "none" }} className="md:block">
+            +7 919 876-03-23
+          </a>
+          <button className="btn-cta">Заказать</button>
+        </div>
       </header>
 
       <main>
@@ -240,6 +245,10 @@ export default function Index() {
           </h4>
           <p style={{ color: "#666", fontSize: "14px", lineHeight: 2 }}>
             г. Белая Калитва
+            <br />
+            <a href="tel:+79198760323" style={{ color: "var(--primary)", fontWeight: 800, textDecoration: "none" }}>
+              +7 919 876-03-23
+            </a>
             <br />
             Заказы: с 9:00 до 21:00
             <br />
