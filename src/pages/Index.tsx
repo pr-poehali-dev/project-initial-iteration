@@ -64,90 +64,122 @@ export default function Index() {
         <section className="section-padding">
           <div className="section-header">
             <h2 className="section-title">НАШИ ПИРОГИ</h2>
-            <a
-              href="#"
-              className="text-sm md:text-base"
-              style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
-            >
-              Всё меню
-            </a>
+            <p className="text-sm md:text-base" style={{ color: "var(--dark)", fontWeight: 700 }}>цена за 1 кг</p>
           </div>
 
-          <div className="menu-grid">
-            {/* Item 1 */}
+          <div className="menu-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
             <div className="menu-card">
               <span className="menu-tag">Хит продаж</span>
-              <img
-                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/047548f0-39e0-41c4-b4af-cd51e34d9fd6.jpg"
-                alt="Пирог с капустой и яйцом"
-              />
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/922b6f0e-c2db-441f-9eeb-133cbd587df4.jpg" alt="Пирог с мясом" />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>С капустой и яйцом</h3>
-                  <span className="price">350 ₽</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>
-                  Нежное дрожжевое тесто, сочная капуста с варёными яйцами по бабушкиному рецепту.
-                </p>
-              </div>
-            </div>
-
-            {/* Item 2 */}
-            <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Сытный
-              </span>
-              <img
-                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/922b6f0e-c2db-441f-9eeb-133cbd587df4.jpg"
-                alt="Пирог с мясом"
-              />
-              <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
                   <h3>С мясом</h3>
-                  <span className="price">450 ₽</span>
+                  <span className="price">980 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Сочный фарш из говядины и свинины с луком, запечённый в воздушном тесте.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Сочный фарш из говядины и свинины с луком в воздушном тесте.</p>
               </div>
             </div>
 
-            {/* Item 3 */}
             <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Сладкий
-              </span>
-              <img
-                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/3e4d1405-8c29-42c9-8ccf-3808223cd2f3.jpg"
-                alt="Пирог с яблоками"
-              />
+              <span className="menu-tag" style={{ background: "var(--secondary)" }}>Популярный</span>
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/047548f0-39e0-41c4-b4af-cd51e34d9fd6.jpg" alt="Пирог с мясом и капустой" />
               <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>С яблоками</h3>
-                  <span className="price">320 ₽</span>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С мясом и капустой</h3>
+                  <span className="price">840 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>
-                  Ароматные яблоки с корицей и сахаром в нежном тесте — к чаю и не только.
-                </p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Нежная капуста с мясным фаршем — сытно и по-домашнему.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>Классика</span>
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/047548f0-39e0-41c4-b4af-cd51e34d9fd6.jpg" alt="Пирог с капустой" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С капустой</h3>
+                  <span className="price">740 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Традиционный пирог с тушёной капустой по бабушкиному рецепту.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/5af83356-eb70-4bd6-9a4f-9d8f6374e0ff.jpg" alt="Пирог с картофелем и сыром" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С картофелем и сыром</h3>
+                  <span className="price">830 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Нежное картофельное пюре с тянущимся сыром внутри.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/5af83356-eb70-4bd6-9a4f-9d8f6374e0ff.jpg" alt="Пирог с сыром, творогом и зеленью" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С сыром, творогом и зеленью</h3>
+                  <span className="price">950 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Нежная начинка из творога и сыра с ароматной зеленью.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/922b6f0e-c2db-441f-9eeb-133cbd587df4.jpg" alt="Пирог с картофелем и мясом" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С картофелем и мясом</h3>
+                  <span className="price">820 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Сытная начинка из картофеля и мяса — идеальный обед.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <span className="menu-tag" style={{ background: "var(--secondary)" }}>Любимый</span>
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/ea817a8c-bb95-4055-8f7e-045cc3070e98.jpg" alt="Пирог с курицей, грибами и сыром" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С курицей, грибами и сыром</h3>
+                  <span className="price">1 000 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Сочное куриное филе с грибами и расплавленным сыром.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/ea817a8c-bb95-4055-8f7e-045cc3070e98.jpg" alt="Пирог с курицей" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С курицей</h3>
+                  <span className="price">920 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Нежное куриное филе с луком в домашнем тесте.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/922b6f0e-c2db-441f-9eeb-133cbd587df4.jpg" alt="Пирог с индейкой" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>С индейкой</h3>
+                  <span className="price">980 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Диетическое филе индейки с ароматными специями.</p>
+              </div>
+            </div>
+
+            <div className="menu-card" style={{ borderColor: "var(--primary)" }}>
+              <span className="menu-tag" style={{ background: "var(--primary)" }}>Особый</span>
+              <img src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/5af83356-eb70-4bd6-9a4f-9d8f6374e0ff.jpg" alt="Курник Царский" />
+              <div className="menu-card-body">
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" }}>
+                  <h3>Курник Царский</h3>
+                  <span className="price">2 100 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>С рисом, курицей и грибами. Вес более 2 кг — настоящий праздничный пирог!</p>
               </div>
             </div>
           </div>
