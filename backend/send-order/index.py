@@ -24,8 +24,8 @@ def handler(event: dict, context) -> dict:
     time = body.get("time", "—")
 
     smtp_password = os.environ.get("SMTP_PASSWORD", "")
-    sender_email = "O.kerenceva@bk.ru"
-    recipient_email = "O.kerenceva@bk.ru"
+    sender_email = "maminypirogi@bk.ru"
+    recipient_email = "maminypirogi@bk.ru"
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = f"Новый заказ: {pie}"
