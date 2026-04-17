@@ -4,61 +4,61 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">ПИРОГИ*ДОМА</div>
         <nav>
           <a href="#">Меню</a>
           <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <button className="btn-cta">Заказать</button>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              С ЛЮБОВЬЮ,
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              КАК <span>ДОМА</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Настоящие русские пироги по традиционным рецептам. Только проверенные продукты, только домашнее тесто — и доставка прямо к вашему столу в Белой Калитве.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Заказать пирог
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
                 Смотреть меню
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/5af83356-eb70-4bd6-9a4f-9d8f6374e0ff.jpg")` }}>
             <div className="sticker">
-              СВЕЖАК
+              СВЕЖАЯ
               <br />
-              КАЖДЫЙ ДЕНЬ
+              ВЫПЕЧКА
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #ДОМАШНЕЕ
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              С ДУШОЙ
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * ПИРОГИ ПО БАБУШКИНЫМ РЕЦЕПТАМ * БЕСПЛАТНАЯ ДОСТАВКА * ТОЛЬКО СВЕЖИЕ ПРОДУКТЫ * ЗАКАЗЫ С 9:00 ДО 21:00 * БЕЛАЯ КАЛИТВА *
+            ПИРОГИ ПО БАБУШКИНЫМ РЕЦЕПТАМ * БЕСПЛАТНАЯ ДОСТАВКА * ТОЛЬКО СВЕЖИЕ ПРОДУКТЫ * ЗАКАЗЫ С 9:00 ДО 21:00 * БЕЛАЯ КАЛИТВА
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">НАШИ ПИРОГИ</h2>
             <a
               href="#"
               className="text-sm md:text-base"
@@ -73,8 +73,8 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Хит продаж</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/047548f0-39e0-41c4-b4af-cd51e34d9fd6.jpg"
+                alt="Пирог с капустой и яйцом"
               />
               <div className="menu-card-body">
                 <div
@@ -85,11 +85,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>С капустой и яйцом</h3>
+                  <span className="price">350 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Нежное дрожжевое тесто, сочная капуста с варёными яйцами по бабушкиному рецепту.
                 </p>
               </div>
             </div>
@@ -97,11 +97,11 @@ export default function Index() {
             {/* Item 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+                Сытный
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/922b6f0e-c2db-441f-9eeb-133cbd587df4.jpg"
+                alt="Пирог с мясом"
               />
               <div className="menu-card-body">
                 <div
@@ -112,21 +112,21 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>С мясом</h3>
+                  <span className="price">450 ₽</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>Сочный фарш из говядины и свинины с луком, запечённый в воздушном тесте.</p>
               </div>
             </div>
 
             {/* Item 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Популярное
+                Сладкий
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/3e4d1405-8c29-42c9-8ccf-3808223cd2f3.jpg"
+                alt="Пирог с яблоками"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +137,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>С яблоками</h3>
+                  <span className="price">320 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Ароматные яблоки с корицей и сахаром в нежном тесте — к чаю и не только.
                 </p>
               </div>
             </div>
@@ -150,45 +150,44 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">ГОТОВИМ С ДУШОЙ.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Каждый пирог — это произведение кулинарного искусства. Мы используем только качественные продукты от проверенных поставщиков и сохраняем секреты домашней выпечки, передающиеся из поколения в поколение. Привезём в удобное для вас время.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
               Наша история
             </button>
           </div>
-          <div className="vibe-img"></div>
+          <div className="vibe-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/ea817a8c-bb95-4055-8f7e-045cc3070e98.jpg")` }}></div>
         </section>
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            НАШИ ПИРОГИ В ДЕТАЛЯХ
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/047548f0-39e0-41c4-b4af-cd51e34d9fd6.jpg"
+                alt="Пирог с капустой"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/5af83356-eb70-4bd6-9a4f-9d8f6374e0ff.jpg"
+                alt="Пироги домашние"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/922b6f0e-c2db-441f-9eeb-133cbd587df4.jpg"
+                alt="Пирог с мясом"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://cdn.poehali.dev/projects/7cb98062-237f-42b8-b192-d2313c915aa0/files/3e4d1405-8c29-42c9-8ccf-3808223cd2f3.jpg"
+                alt="Яблочный пирог"
               />
             </div>
           </div>
@@ -197,9 +196,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">ПИРОГИ*ДОМА</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Настоящие русские пироги с доставкой по Белой Калитве. Готовим с любовью и заботой о каждом клиенте.
           </p>
         </div>
         <div className="footer-links">
@@ -217,29 +216,35 @@ export default function Index() {
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
+                Доставка
               </a>
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+                Контакты
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-links">
-          <h4>Часы работы</h4>
+          <h4>Доставка</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Бесплатная по г. Белая Калитва</li>
+            <li>Привезём в удобное время</li>
+            <li>Заказы принимаем с 9:00 до 21:00</li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div>
+          <h4 style={{ marginBottom: "15px", fontWeight: 800, textTransform: "uppercase", fontSize: "14px" }}>
+            Контакты
+          </h4>
+          <p style={{ color: "#666", fontSize: "14px", lineHeight: 2 }}>
+            г. Белая Калитва
+            <br />
+            Заказы: с 9:00 до 21:00
+            <br />
+            Доставка: бесплатно
+          </p>
         </div>
       </footer>
     </>
